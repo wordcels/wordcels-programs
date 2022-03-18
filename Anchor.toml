@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+wordcels_programs = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+wordcels_programs = "ELP7c23X8MgeGZV3i2HxYz1bzFjcKpqApPVsCvUuaTN2"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/coder/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
